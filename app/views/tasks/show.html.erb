@@ -5,5 +5,5 @@
 
 <%= link_to 'Back to all tasks', tasks_path %>
 
-<%= link_to 'Delete me', task_destroy_path(@task), method: :delete %>
+<%= link_to 'Delete me', task_destroy_path(@task), method: :delete, data: { confirm: "Are you sure?" }  %>
 

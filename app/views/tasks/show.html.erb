@@ -1,0 +1,9 @@
+<h2> <%= @task.title %> <%= @task.completed ? '[x]' : '[ ]' %></h2>
+<p> <%= @task.details %> </p>
+
+<%= link_to 'Edit me', task_edit_path(@task) %>
+
+<%= link_to 'Back to all tasks', tasks_path %>
+
+<%= link_to 'Delete me', task_destroy_path(@task), method: :delete %>
+
